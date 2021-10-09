@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FCamara - Retorno Presencial</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="imagex/png" href="https://cdn.discordapp.com/attachments/750028167225540648/896030341486235668/teste-icone.ico">
+</head>
+
+<header>
+  <nav>
+    <a href="https://www.fcamara.com.br/">
+      <img class="logo-fcamara" src="https://cdn.discordapp.com/attachments/750028167225540648/894365340849569862/Logotipo-FCamarabranco.png">
+    </a>
+      <div class="nav-text">
+      <a class="a-inicio" href="#inicio">Início</a>
+      <a href="#meio">Informações</a>
+      <a href="#fim">Agendamento</a>
+      </div>
+  </nav>
+</header>
+
+<body>
+  <div class="container">
+    <main id="inicio">
+      <h1>SEJAM BEM VINDOS<br>#SangueLaranjas!</h1>
+      <p class="texto-principal">Com o avanço da vacinação, temos o prazer de noticiar o retorno das atividades presenciais com algumas regras, de forma opcional e mediante agendamento.</p>
+    
+      <div class="info-agendamento-seta">
+        <p class="info">Desça a página, para mais informações sobre o retorno e o Agendamento</p>
+        <a href="#meio"><img class="seta" src="https://mairatamberlini.com.br/wp-content/uploads/2020/07/scroll.gif"></a>
+      </div>
+    </main>
+  </div>
+
+  <div id="meio" class="informacoes">
+    <h2>Informações importantes sobre o retorno!</h2>
+    <div class="texto-temperatura-mascara">
+    <img class="imagem-temperatura" src="https://cdn.discordapp.com/attachments/750028167225540648/893334179658477588/medindoTemperaturaPronto.png">
+    <p>Será medida a temperatura ao chegar no escritório.<br>
+      O uso de máscaras no interior dos escritórios será obrigatório.</p>
+  </div>
+
+  <div class="texto-capacidade-distancia">
+    <p>Haverão adesivos para sinalizar onde os #SangueLaranjas devem sentar, para que haja o distanciamento necessário.<br>
+      Os escritórios só podem comportar até 40% dos consultores, conforme a legislação.</p>
+    <img class="imagem-escritorio" src="https://cdn.discordapp.com/attachments/750028167225540648/893631569812672543/imagemdistanciamentoeNumerodePessoas.png">
+  </div>
+
+  <div class="texto-sintomas">
+    <img class="imagem-sintomas" src="https://cdn.discordapp.com/attachments/750028167225540648/894796531234922526/sintomas.png">
+    <p>Pessoas que estiverem sentindo algum sintoma não devem ir trabalhar presencialmente, a indicação é para que permaneçam em casa.</p>
+  </div>
+
+    <div class="texto-escritorios">
+    <p>Os escritórios voltarão a ficar abertos das 8h as 18h.</p>
+    <img class="imagem-relogio" src="https://cdn.discordapp.com/attachments/750028167225540648/895104361473142794/relogio.png">
+    </div>
+
+    <div class="texto-calendario">
+    <img class="imagem-calendario" src="https://cdn.discordapp.com/attachments/750028167225540648/895104386886430750/calendario.png">
+    <p>O retorno só é possível por agendamento, onde os #SangueLaranjas poderão optar qual escritório ir, além de escolher data e também a estação de trabalho demarcada com um número.<br>Como dito anteriormente, o retorno é opcional. Aqueles que não moram nas regiões dos nossos escritórios, continuarão no Home Office.</p>
+  </div>
+
+    <div class="localizacoes">
+    <div class="escritorio-principal">
+    <img class="imagem-principal" src="https://cdn.discordapp.com/attachments/750028167225540648/895120488064516176/escritorioprincipal.png">
+    <p>São Paulo, SP - Principal</p>
+    </div>
+
+    <div class="escritorio-filial">
+    <img class="imagem-filial" src="https://cdn.discordapp.com/attachments/750028167225540648/895116017699811369/escritorio-filial.png">
+      <p>Santos, SP - Filial</p>
+    </div>
+    </div>
+  </div>
+  </div>
+  
+  <div id="fim" class="parte-agendamento">
+    <div class="div-imagem-final">
+      <img class="imagem-final" src="https://cdn.discordapp.com/attachments/750028167225540648/895127872799375390/Logotipo-FCamara-final.png">
+    </div>
+    <div class="fundo-inicial">
+      <h4>Agendamento</h4>
+      <div class="inputComIcone">
+      <input type="text" id="nome" class="nome" placeholder="Digite seu nome"/>
+      <img class="icone-nome" src="https://img.icons8.com/pastel-glyph/64/ffffff/person-male--v3.png"/>
+      </div>
+      <div class="inputIconeEmail">
+      <input type="text" id="email" class="email" placeholder="Digite seu email"/>
+      <img class="icone-email" src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/64/ffffff/external-email-interface-kiranshastry-solid-kiranshastry-1.png"/>
+      </div>
+      
+        <select class="local" id="local">
+      <option>Escolha o local</option>
+      <option>São Paulo, SP</option>
+      <option>Santos, SP</option>
+        </select>
+    
+        <div>
+          <input placeholder=" Escolha a data de agendamento" class="data" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="data" />
+        </div>
+        
+        <select class="numero" id="numero-estacao">
+      <option>Escolha a estação de trabalho</option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+        </select>
+        
+        <div class="div-verificacao">
+        <input type="checkbox" id="verificacao" class="verificacao" name="verificacao"/>
+        <label for="verificacao">Declaro que li e entendi, todas as regras e informações descritas acima.<br> Entendi também que o retorno é opcional. </label>
+        </div>
+
+        <button id="btnAgendar" class="button-agendar" onclick="btnAgendar()" disabled="true">Agendar</button>
+
+        <div class="resultado" id="resultado"></div>
+    </div>
+  </div>
+
+    <div id="modal-dados" class="modal-container">
+      <div class="modal">
+        <button class="fechar-modal">X</button>
+        <h4 class="titulo-modal">Confira e confirme seu agendamento</h4>
+        <p id="nome-modal">nome</p>
+        <p id="email-modal">email</p>
+        <p id="local-modal">local</p>
+        <p id="data-modal">data</p>
+        <p id="numero-estacao-modal">numero</p>
+        <input type="button" onclick="btnConfirmar()" class="btnConfirmar" value="Confirmar">
+      </div>
+    </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
